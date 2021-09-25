@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Bot" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="autotest.core.listener.MyTestResultListener"/>
+    </listeners>
+    <test name = "Testing functionality of bot" group-by-instances="true">
+        <classes>
+            <class name="autotest.tests.instaBot.StartBot"/>
+        </classes>
+    </test>
+</suite>
